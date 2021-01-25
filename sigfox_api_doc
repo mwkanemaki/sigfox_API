@@ -8,6 +8,36 @@ support.sigfox.com
 概要　重要
 Sigfox API Usage-rev3.1.6.pdf
 
+sigfoxは３種類のデータアクセス手段を提供している
+1.　Graphical User Interface (GUI)
+　人間向け　すべてのデータにアクセスできる
+ 設定変更もできる
+ 
+2.　Callbacks
+ 　　特定のイベント　自動通知する
+   　例えば、デバイスからの新規メッセージ、新規活性化デバイス
+    CallbackはHTTPサーバに向けて行われる。
+    イベントに関連したデータのみがCallbackに適する。
+    
+3.　API
+　　HTTPリクエストを使ってデータの生成、変更を行う。
+  
+  
+  
+
+
+
+
+
+    
+    
+    
+   
+ 
+ 
+ 
+ 
+ 
 
 
 
