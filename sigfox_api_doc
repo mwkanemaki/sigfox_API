@@ -8,19 +8,46 @@ support.sigfox.com
 概要　重要
 Sigfox API Usage-rev3.1.6.pdf
 
+1.sigfoxにおけるデータ　インターフェース
 sigfoxは３種類のデータアクセス手段を提供している
-1.　Graphical User Interface (GUI)
+●　Graphical User Interface (GUI)
 　人間向け　すべてのデータにアクセスできる
  設定変更もできる
  
-2.　Callbacks
+●　Callbacks
  　　特定のイベント　自動通知する
    　例えば、デバイスからの新規メッセージ、新規活性化デバイス
     CallbackはHTTPサーバに向けて行われる。
     イベントに関連したデータのみがCallbackに適する。
     
-3.　API
+●　API
 　　HTTPリクエストを使ってデータの生成、変更を行う。
+  大部分のデータ操作はAPI経由で可能である。
+  例えば、グループ生成、デバイス登録、callback生成。
+  
+ 2.　API 導入
+ 　　大部分のsigfoxバックエンドの操作、データアクセスはwebサービスAPIを通して自動処理可能である。
+   APIリクエストは複数のソフトウエア手段、言語を通して、容易に生成、操作可能である。
+   例えば、C,Java,Python,CURL,ブラウザ拡張など。
+   リターン値はJSON形式であり、容易に構文解析可能であり、すべてのプログラミング言語で使用可能である。
+   現在のAPIは第二世代である(v2) 2018年10月に公開された。
+   
+   API v2 のベースURLは https://api.sigfox.com/v2/　である。
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+ 
+ 
+  
   
   
   
